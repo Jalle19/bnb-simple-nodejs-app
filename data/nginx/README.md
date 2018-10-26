@@ -34,7 +34,13 @@ Verify that the configuration is fine:
 sudo nginx -t
 ```
 
-If everything is fine we restart nginx to apply the configuration:
+Before we apply our changes, we need to change the user that nginx runs as so that it has access to read our files. This is controlled in the first line of `/etc/nginx/nginx.conf`. Let's change it like this:
+
+```
+user ubuntu;
+```
+
+Now, if everything is fine we restart nginx to apply the configuration:
 
 ```bash
 sudo service nginx restart

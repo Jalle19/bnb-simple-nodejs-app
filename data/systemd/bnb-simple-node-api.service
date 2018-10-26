@@ -6,8 +6,8 @@ After=network.target
 WantedBy=multi-user.target
 
 [Service]
-User=root
-Group=root
+User=ubuntu
+Group=ubuntu
 Restart=always
 WorkingDirectory=/root/bnb-simple-nodejs-app/api
 ExecStart=/usr/bin/node index.js
