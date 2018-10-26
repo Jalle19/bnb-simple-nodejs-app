@@ -11,7 +11,7 @@ class App extends React.Component {
   }
 
   async componentDidMount() {
-    const response = await fetch('http://localhost:3000/serverInfo');
+    const response = await fetch('http://api.example.com/serverInfo');
 
     this.setState({
       serverInfo: await response.text()
