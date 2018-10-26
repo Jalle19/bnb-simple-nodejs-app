@@ -6,20 +6,26 @@ Each "service" in systemd is defined by a "unit" file
 
 ## Enable our unit file
 
-```
+```bash
 systemctl enable /root/bnb-simple-nodejs-app/data/systemd/bnb-simple-node-api.service
 ```
 
 ## Start the service
 
-```
+```bash
 systemctl start bnb-simple-node-api
 ```
 
-Before the service can actually start properly you need to make sure NodeJS is installed and you've run `yarn install` from the project directory
+Before the service can actually start properly you need to make sure NodeJS is installed and you've run `yarn install` from the project directory.
+
+You can verify the service is running using:
+
+```bash
+systemctl status bnb-simple-node-api
+```
 
 ## Check log out
 
-```
+```bash
 journalctl -u bnb-simple-node-api -f
 ```
