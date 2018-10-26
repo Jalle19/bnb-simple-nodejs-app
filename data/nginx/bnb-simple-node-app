@@ -1,0 +1,14 @@
+server {
+  listen 80 default_server;
+  listen [::]:80 default_server;
+
+  root /root/bnb-simple-nodejs-app/ui/public;
+
+  index index.html;
+
+  server_name example.com www.example.com;
+
+  location / {
+    try_files $uri $uri/ =404;
+  }
+}
