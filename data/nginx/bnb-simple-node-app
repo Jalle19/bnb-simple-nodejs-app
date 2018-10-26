@@ -2,13 +2,23 @@ server {
   listen 80 default_server;
   listen [::]:80 default_server;
 
-  root /root/bnb-simple-nodejs-app/ui/public;
-
-  index index.html;
-
   server_name example.com www.example.com;
+  
+  root /root/bnb-simple-nodejs-app/ui/public;
+  index index.html;
 
   location / {
     try_files $uri $uri/ =404;
+  }
+}
+
+server {
+  listen 80;
+  listen [::]:80;
+
+  server_name api.example.com;  
+
+  location / {
+    proxy_pass http://localhost:3000;
   }
 }
