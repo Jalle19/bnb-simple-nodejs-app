@@ -25,7 +25,7 @@ sudo rm /etc/nginx/sites-enabled/default
 Now, let's symlink our app's own site file:
 
 ```bash
-sudo ln -s /root/bnb-simple-nodejs-app/data/nginx/sites-enabled/bnb-simple-nodejs-app /etc/nginx/sites-enabled/bnb-simple-nodejs-app
+sudo ln -s /root/bnb-simple-nodejs-app/data/nginx/bnb-simple-node-app /etc/nginx/sites-enabled/bnb-simple-node-app
 ```
 
 Verify that the configuration is fine:
