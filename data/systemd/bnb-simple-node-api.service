@@ -9,5 +9,5 @@ WantedBy=multi-user.target
 User=ubuntu
 Group=ubuntu
 Restart=always
-WorkingDirectory=/root/bnb-simple-nodejs-app/api
+WorkingDirectory=/home/ubuntu/bnb-simple-nodejs-app/api
 ExecStart=/usr/bin/node index.js
