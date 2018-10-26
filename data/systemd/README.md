@@ -7,7 +7,7 @@ Each "service" in systemd is defined by a "unit" file
 ## Enable our unit file
 
 ```bash
-sudo systemctl enable /root/bnb-simple-nodejs-app/data/systemd/bnb-simple-node-api.service
+sudo systemctl enable /home/ubuntu/bnb-simple-nodejs-app/data/systemd/bnb-simple-node-api.service
 ```
 
 ## Start the service
@@ -24,7 +24,7 @@ You can verify the service is running using (doesn't require sudo):
 systemctl status bnb-simple-node-api
 ```
 
-## Check log out
+## Check out the logs
 
 ```bash
 sudo journalctl -u bnb-simple-node-api -f
