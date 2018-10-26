@@ -4,7 +4,7 @@ server {
 
   server_name example.com www.example.com;
   
-  root /root/bnb-simple-nodejs-app/ui/public;
+  root /home/ubuntu/bnb-simple-nodejs-app/ui/public;
   index index.html;
 
   location / {
