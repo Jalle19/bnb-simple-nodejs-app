@@ -9,10 +9,14 @@ app.use(cors());
 
 // Add a couple of routes
 app.get('/', (req, res) => {
+  console.log('Got / request');
+
   res.send('This is the API');
 });
 
 app.get('/serverInfo', (req, res) => {
+  console.log('Got /serverInfo request');
+
   res.send(`API is running on architecture ${os.arch()}, hostname ${os.hostname()}, uptime ${os.uptime()} seconds`);
 });
 
