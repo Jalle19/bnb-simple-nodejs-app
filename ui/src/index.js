@@ -20,7 +20,7 @@ class App extends React.Component {
 
   render() {
     return [
-      React.createElement('h1', null, `Beer Banter simple NodeJS app`),
+      React.createElement('h1', null, `Beer Banter simple NodeJS app, second version`),
       React.createElement('p', null, `Below we will display some information from the API:`),
       React.createElement('i', null, this.state.serverInfo)
     ];
