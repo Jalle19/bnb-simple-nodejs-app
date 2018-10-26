@@ -1,0 +1,13 @@
+[Unit]
+Description=bnb-simple-nodejs-app
+After=network.target
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+User=root
+Group=root
+Restart=always
+WorkingDirectory=/root/bnb-simple-nodejs-app/api
+ExecStart=/usr/bin/node index.js
